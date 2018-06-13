@@ -9,6 +9,6 @@
     }
     
     void TestCase::print(){
-        *Error << this->TestName <<": " << Failed << " Failed  "<< Passed <<" Passed  "<< (Passed+Failed) << " total."<<endl;
+        *Error << this->TestName <<": " << Failed << " failed, "<< Passed <<" passed, "<< Count << " total."<<endl;
         cout << "---" << endl;
     }

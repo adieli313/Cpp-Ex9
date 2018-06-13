@@ -25,9 +25,10 @@ TestCase check_equal(const T& a,const T& b){
     if((T)a == (T)b){
         Passed++; 
     }
-    else
+    else{
         *Error << this->TestName << ": Failure in test #" <<Count <<  " The numbers are not equals!" <<endl; 
         Failed++;
+    }
        
     return *this;
 }
