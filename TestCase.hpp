@@ -53,7 +53,7 @@ TestCase check_output(const T& a,const string& b){
     keep<<a;
     if(keep.str() != b){
         *Error << this->TestName << ": Failure in test #" << Count << " string value should be " << b 
-                  << " but is " << a <<"!" <<endl;
+                  << " but is " << a << endl;
         Failed++;
         
     }
