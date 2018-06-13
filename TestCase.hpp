@@ -26,7 +26,7 @@ TestCase check_equal(const T& a,const T& b){
         Passed++; 
     }
     else{
-        *Error << this->TestName << ": Failure in test #" << Count << " " << a << " should equal " << b << endl; 
+        *Error << this->TestName << ": Failure in test #" << Count << " " << a << " should equal " << b << "!" << endl; 
         Failed++;
     }
     
