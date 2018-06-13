@@ -38,7 +38,7 @@ template <typename T>
 TestCase check_different(const T& a,const T& b){
     this->Count++;
     if((T)a == (T)b){
-        *Error << this->TestName << ": Failure in test #" << Count << ": The numbers are equals!" <<endl;
+        *Error << this->TestName << ": Failure in test #" << Count << ": " << a << " should be diffrent " << b << endl;
         Failed++;
     }
     else
@@ -53,7 +53,7 @@ TestCase check_output(const T& a,const string& b){
     keep<<a;
     if(keep.str() != b){
         *Error << this->TestName << ": Failure in test #" << Count << ": string value should be " << b 
-                  << " but is " << a << endl;
+                  << " but is " << a << "!" << endl;
         Failed++;
         
     }
